@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lab Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Lab Test</h1>
+
+        <div id="question-box"> 
+            <!-- Question content will be dynamically generated here -->
+        </div>
+
+        <div id="settings">
+            <label for="studentLevel">Student Level:</label>
+            <select id="studentLevel">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic">
+
+            <button onclick="fetchQuestion()">Generate Question</button>
+        </div>
+
+        <div id="code-input-area" class="code-input-container">
+            <label for="codeInput">Your Code:</label>
+            <textarea id="codeInput" rows="20" class="code-input"></textarea>
+            <button onclick="submitCode()">Submit</button> 
+        </div>
+
+        <div id="result-area">
+            <p>Result:</p>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
